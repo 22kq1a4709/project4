@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>JavaScript functions </title>
+</head>
+<script>
+    // User Validations
+function loginValidation() {
+        // Rama
+var uname = document.myform.username.value;
+         //Rama@123
+var password = document.myform.password.value;
+        if(uname==null || uname=="") {
+          alert("Name cant be blank")
+          return false;  
+       } else if (password.length<6){
+          alert("Password Must be 6 letters")
+          return false;
+       }  
+       return true                 
+    }           
+ </script>
+ </head>
+<style>
+    div {
+        text-align:center;
+
+     }
+     h1{
+        color:rgb(0,255,255);
+     }
+/*  Smart phone      */
+                  
+@media screen and (min-width:320px )  {
+
+body {
+     background-image: url("https://images.pexels.com/photos/6761508/pexels-photo-6761508.jpeg?cs=srgb&dl=pexels-rachel-claire-6761508.jpg&fm=jpg&_gl=1*nxxtn1*_ga*MjA1MzU0NDIxOS4xNzE3MTU4NzU0*_ga_8JE65Q40S6*MTcxODcxNzAwNC4xNC4xLjE3MTg3MTkyMjUuMC4wLjA.");
+     background-size: cover;
+    }
+}
+/*  Tablet,ipad      */    
+
+@media Screen and (min-width:768px) and (max-width:1024px){
+body {
+     background-image: url("https://images.pexels.com/photos/20689095/pexels-photo-20689095.jpeg?cs=srgb&dl=pexels-tokki-papa-1095148033-20689095.jpg&fm=jpg&_gl=1*1jg6ejt*_ga*MjA1MzU0NDIxOS4xNzE3MTU4NzU0*_ga_8JE65Q40S6*MTcxODcxNzAwNC4xNC4xLjE3MTg3MTk0OTkuMC4wLjA.");
+     background-size: cover;
+    }
+}
+
+/* Desktops and Laptops asfsdf     */    
+
+@media Screen and (min-width:1224px) {
+body {
+     background-image: url("https://images.pexels.com/photos/8364055/pexels-photo-8364055.jpeg?cs=srgb&dl=pexels-rdne-8364055.jpg&fm=jpg&_gl=1*uu4nkl*_ga*MjA1MzU0NDIxOS4xNzE3MTU4NzU0*_ga_8JE65Q40S6*MTcxODcxNzAwNC4xNC4xLjE3MTg3MTkxNzUuMC4wLjA.");
+     background-size: cover;
+    }
+}
+
+/* Large Screens---------  */
+@media Screen and (min-width:1824px) {
+     
+}
+     p{
+      font-family: Courier,monospace;
+      font-size: small;
+     }
+</style>
+<body>
+<center>
+
+<h2>LOGIN PAGE</h2>
+<form name="myform" action="LoginSuccess.html" 	onsubmit="return loginValidation(this)">
+username: <input type="text" name="username"><br> <br>
+password: <input type="password" name="password"><br> <br>
+        <input type="submit" value="Submit"> 
+    </form>
+</center>   
+</body>
+</html>

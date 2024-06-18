@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>JavaScript function</title>
+</head>
+<script>
+    // User Validations
+function loginValidation() {
+        // Rama
+var uname = document.myform.username.value;
+         //Rama@123
+var password = document.myform.password.value;
+        if(uname==null || uname=="") {
+          alert("Name cant be blank")
+          return false;  
+       } else if (password.length<6){
+          alert("Password Must be 6 letters")
+          return false;
+       }  
+       return true                 
+    }           
+ </script>
+ </head>
+<style>
+    div {
+        text-align:center;
+    }
+     body {
+         background-image: url("https://images.pexels.com/photos/1809340/pexels-photo-1809340.jpeg?cs=srgb&dl=pexels-nietjuh-1809340.jpg&fm=jpg&_gl=1*jdv3gm*_ga*MjA1MzU0NDIxOS4xNzE3MTU4NzU0*_ga_8JE65Q40S6*MTcxODcyNjcwNy4xNi4xLjE3MTg3MjY3MzQuMC4wLjA.");
+         background-size: cover;
+         height: 5cm;
+     }
+     h1{
+        color: pink;
+     }
+     p{
+      font-family: Courier,monospace;
+      font-size: small;
+     }
+</style>
+<div>   
+<body>
+<h1>CONTACT US:</h1>
+<form name="myform" action="contactsuccess.html" onsubmit="return loginValidation(this)">
+Fullname:<input type="text" name="username"><br> <br>
+Phonenumber:<input type="password" name="password"><br> <br>
+Address:<input type="text" name="aname"><br> <br>
+<button>
+    submit
+</button>
+</div>
+</body>
+</html>

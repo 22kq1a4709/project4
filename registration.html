@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>JavaScript function</title>
+</head>
+<script>
+    // User Validations
+function loginValidation() {
+        // Rama
+var uname = document.myform.username.value;
+         //Rama@123
+var password = document.myform.password.value;
+        if(uname==null || uname=="") {
+          alert("Name cant be blank")
+          return false;  
+       } else if (password.length<6){
+          alert("Password Must be 6 letters")
+          return false;
+       }  
+       return true                 
+    }           
+ </script>
+ </head>
+<style>
+    div {
+        text-align:center;
+    }
+      body {
+         background-image: url("https://images.pexels.com/photos/1907784/pexels-photo-1907784.jpeg?cs=srgb&dl=pexels-rickyrecap-1907784.jpg&fm=jpg&_gl=1*10sd1sq*_ga*MjA1MzU0NDIxOS4xNzE3MTU4NzU0*_ga_8JE65Q40S6*MTcxODcyMjExNy4xNS4xLjE3MTg3MjIyNDMuMC4wLjA.");
+         background-size: cover;
+         height: 5cm;
+     }
+     h1{
+        color:rgb(0,255,255);
+     }
+     p{
+      font-family: Courier,monospace;
+      font-size: small;
+     }
+</style>
+
+
+<body>
+<div>
+<form action="login.html">
+    <h1 align="center" style="color: white;">CREATE YOUR PROFILE</h1>
+<p style="color: white;">STUDENT_NAME :
+<input type="text" name="username" style="color: white;"> <br>
+<p style="color: white;">STUDENT_ROLLNO :
+<input type="text" name="uname" style="color: white;"> <br>
+
+<h2 align="center" style="color: white;">GENDER</h2>
+<p style="color: white;">GENDER:
+<input type="radio" name="gender" value="F" style="color: white;">female<br>
+<input type="radio" name="gender" value="M" style="color: white;">male<br>
+<form action="/">
+
+<h2 align="center" style="color: white;">DATE OF BIRTH</h2>
+    <p style="color: white;">DATE OF BIRTH:
+<input type="date" name="bname" style="color: white"> <br>
+
+<h2 align="center" style="color: white;">BRANCH</h2>
+<h2 style="color: white;">select cars</h2>
+<select name="mybranch">
+<option value="IOT" style="color: white;">IOT </option>
+<option value="AIDS" style="color: white;">AIDS</option>
+<option value="CSE" style="color: white;">CSE</option>
+<option value="Other" style="color: white;">Other</option>
+</select>
+<h2 align="center" style="color: white;">EMAIL</h2>
+<p style="color: white;">EMAIL :
+<form action="">
+<input type="email"  name="office" id="myofficeid"> <br>
+<p style="color: white;">PHONE NUMBER :
+<form action="">
+     
+<input type="number" name="text"> <br> 
+<h2 align="center" style="color: white;">ADDRESS</h2>
+<input type="Address" name="text"> <br>
+
+<h2 align="center" style="color: white;">BOOKS TO READ</h2>
+<h2 style="color: white;">select books</h2>
+<select name="mybooks">
+<option value="HOLY" style="color: white;">HOLY</option>
+<option value="CARTOON" style="color: white;">CARTOON</option>
+<option value="FAIRY TALE" style="color: white;">FAIRY TALE</option>
+<option value="PSYCHOLOGY" style="color: white;">PSYCHOLOGY</option>
+<option value="Other" style="color: white;">Other</option>
+</select>
+<button>
+    submit
+</button>
+</form>
+</div>
+</body>
+</html>
